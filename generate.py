@@ -23,7 +23,7 @@ def gen_one_addr():
     return (pk_hex, to_checksum(addr_hex))
 
 def to_checksum(lowercase_addr):
-    return Web3.toChecksumAddress(lowercase_addr)
+    return Web3.to_checksum_address(lowercase_addr)
 
 if __name__ == "__main__":
     filename = input('enter a filename (.csv): ')
